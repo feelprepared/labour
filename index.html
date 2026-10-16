@@ -159,6 +159,11 @@ html.fr-contrast {
     [dir="rtl"] .fr-video-item.active .fr-video-chevron { transform: scaleX(-1) rotate(90deg); }
     .fr-home-link { margin-right: auto; display: inline-flex; align-items: center; gap: 4px; font-size: 15px; font-weight: 500; color: var(--nhs-blue); text-decoration: none; padding: 4px 6px; border-radius: 4px; }
     .fr-home-link:hover { text-decoration: underline; }
+    .fr-feedback-wrap { display: flex; justify-content: center; margin-top: 0.75rem; }
+    .fr-feedback-btn { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 500; color: var(--nhs-blue); background: white; border: 1.5px solid var(--nhs-blue-light); border-radius: 20px; padding: 8px 18px; text-decoration: none; transition: all 0.15s; }
+    .fr-feedback-btn:hover { border-color: var(--nhs-blue-soft); background: var(--nhs-blue-pale); }
+    .fr-feedback-btn svg { width: 15px; height: 15px; flex-shrink: 0; }
+    html.fr-dark .fr-feedback-btn { background: #1a2530; }
 </style>
 </head>
 <body>
@@ -219,6 +224,12 @@ html.fr-contrast {
       <div class="fr-footer-legal">
         <a href="disclaimer.html">Disclaimer</a>
       </div>
+    </div>
+    <div class="fr-feedback-wrap">
+      <a class="fr-feedback-btn" href="https://app.onlinesurveys.jisc.ac.uk/s/nhslothiansurveys/qr-code-obstetric-anaesthetic-consent" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Give feedback on this site
+      </a>
     </div>
     <p class="fr-footer-disclaimer">This site does not own or host any linked content. All materials are the property of their respective authors.</p>
   </footer>
